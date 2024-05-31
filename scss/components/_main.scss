@@ -1,0 +1,889 @@
+body {
+    width: 100vw;
+}
+
+main {
+    width: 100vw;
+    z-index: 0;
+}
+
+
+
+.main_baner {
+    height: 323px;
+    background-image: url(/img/main_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "main_text .";
+}
+
+.main_text {
+    grid-area: main_text;
+    padding: 0 0 0 50px;
+}
+
+.main_text p {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    padding-top: 50px;
+    line-height: 24px;
+}
+
+.main_text :first-child {
+    font-size: 40px;
+    font-weight: 900;
+    font-style: italic;
+    padding-bottom: 30px;
+    padding: 50;
+}
+
+.main_text button {
+    color: #000000;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: white;
+    border: none;
+    border-radius: 16px;
+    margin: 30px 0;
+    cursor: pointer;
+}
+
+.main_text button:hover {
+    box-shadow: 3px 3px 25px 0px rgba(255, 255, 255, 1);
+}
+
+.baner_nike {
+    width: 100%;
+}
+
+
+.second_baner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.big_baner {
+    width: 100%;
+    height: 800px;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/img/3.png);
+    overflow: hidden;
+    filter: blur(2px);
+}
+
+.big_baner_icon {
+    position: absolute;
+    z-index: 100;
+    top: 41%;
+    left: 38%;
+}
+
+.summer_mod {
+    width: 100%;
+    display: flex;
+    position: relative;
+    z-index: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.summer_mod_cards {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    top: -40px;
+    flex-direction: row;
+    padding-left: 50px;
+}
+
+
+
+.summer_mod_card1 {
+    width: 600px;
+    height: 270px;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #EFEFEF;
+    border-radius: 18px;
+    box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.25);
+}
+
+.summer_mod_card1:hover .shous {
+    transform: rotate(21deg);
+}
+
+.shous {
+    position: absolute;
+    z-index: 100;
+    top: -105px;
+    right: -105px;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+
+
+.shous2 {
+    top: -90px;
+    right: -75px;
+}
+
+.summer_mod_card1_second_text {
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 65px;
+}
+
+.summer_mod_card1_main_text {
+    font-size: 48px;
+    font-weight: 700;
+    font-style: italic;
+    color: $accent_color;
+    padding-top: 60px;
+    padding-left: 65px;
+    padding-bottom: 10px;
+}
+
+.arrow_up {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 35px;
+    margin-left: 65px;
+    margin-top: 15px;
+}
+
+.arrow_up:hover {
+    background-color: #C6C6C6;
+    cursor: pointer;
+}
+
+.summer_mod_card2 {
+    margin-left: 150px;
+}
+
+.summer_mod_text p {
+    padding-top: 350px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.summer_mod_text p span {
+    font-size: 80px;
+    font-weight: 900;
+    font-style: italic;
+    padding: 10px 0 30px 0;
+}
+
+.top_sneahers {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    padding-top: 100px;
+}
+
+.top_sneakers_nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_sneakers_nav p {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.top_sneakers_nav_bar {
+    display: flex;
+    flex-direction: row;
+}
+
+.arrow_right {
+    margin: 0;
+    background-color: #F5F5F5;
+}
+
+.arrow_left {
+    margin: 0;
+    margin-right: 25px;
+    background-color: #F5F5F5;
+}
+
+.arrow_left img {
+    rotate: 180deg;
+}
+
+.arrow_right:hover {
+    background-color: #C6C6C6;
+    cursor: pointer;
+}
+
+.arrow_left:hover {
+    background-color: #C6C6C6;
+    cursor: pointer;
+}
+
+.top_sneahers_cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 33px;
+}
+
+.top_sneahers_card1 {
+    position: relative;
+    width: 400px;
+    height: 580px;
+    background-color: #EFEFEF;
+    border-radius: 18px;
+    box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.top_sneahers_card1_img img {
+    position: absolute;
+    z-index: 100;
+    top: 3%;
+    right: 2%;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.top_sneahers_card1 .top_sneahers_card1_img:hover img {
+    transform: rotate(23deg);
+}
+
+.top_sneahers_card2_img img {
+    position: absolute;
+    z-index: 100;
+    top: 7%;
+    right: -3%;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.top_sneahers_card1 .top_sneahers_card2_img:hover img {
+    transform: rotate(21deg);
+}
+
+.top_sneahers_card3_img img {
+    position: absolute;
+    z-index: 100;
+    top: 2%;
+    right: -2%;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.top_sneahers_card1 .top_sneahers_card3_img:hover img {
+    transform: rotate(25deg);
+}
+
+.logo_text {
+    z-index: -10;
+    line-height: 240px;
+    font-size: 160px;
+    font-weight: 900;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    rotate: 90deg;
+    padding: 30px 150px;
+}
+
+.top_sneahers_card1_content {
+    display: flex;
+    margin-left: 35px;
+    justify-content: start;
+    margin-top: 125px;
+}
+
+.content_text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top_sneahers_card1_content p {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.top_sneahers_card1_content p span {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: $second_font;
+}
+
+.arrow_up_second {
+    margin: 0;
+    margin-top: 85px;
+    margin-left: 40px;
+
+}
+
+.arrow_up_3 {
+    margin: 0;
+    margin-top: 85px;
+    margin-left: 0px;
+
+}
+
+.arrow_up_4 {
+    margin: 0;
+    margin-top: 85px;
+    margin-left: 90px;
+}
+
+.buy_by_category {
+    width: 95%;
+    padding-top: 100px;
+    padding-left: 50px;
+}
+
+.buy_by_category p {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.category_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "category_container_box1 category_container_box2"
+        "category_container_box3 category_container_box4"
+        "category_container_box5 category_container_box6";
+}
+
+.category_container_box1 {
+    grid-area: category_container_box1;
+    transition: box-shadow 0.5s ease;
+}
+
+.category_container_box1:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.category_container_box2 {
+    grid-area: category_container_box2;
+
+}
+
+.category_container_box3 {
+    grid-area: category_container_box3;
+
+}
+
+.category_container_box4 {
+    grid-area: category_container_box4;
+    transition: box-shadow 0.5s ease;
+
+}
+
+.category_container_box4:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.category_container_box5 {
+    grid-area: category_container_box5;
+    transition: box-shadow 0.5s ease;
+
+}
+
+.category_container_box5:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.category_container_box6 {
+    grid-area: category_container_box6;
+
+}
+
+.category_container_box1,
+.category_container_box2,
+.category_container_box3,
+.category_container_box4,
+.category_container_box5,
+.category_container_box6 {
+    align-content: center;
+    justify-self: center;
+    height: 570px;
+}
+
+.category_container_box1,
+.category_container_box4,
+.category_container_box5 {
+    width: 100%;
+    text-align: center;
+}
+
+.category_container_box2 img {
+    width: 100%;
+    height: 570px;
+}
+
+.category_container_box3 img {
+    width: 100%;
+    height: 570px;
+}
+
+.category_container_box6 img {
+    width: 738.8px;
+    height: 570px;
+}
+
+.category_container p {
+    font-size: 36px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 44px;
+    letter-spacing: 20px;
+}
+
+.look_good {
+    width: 90%;
+    padding-top: 100px;
+    padding-left: 50px;
+}
+
+.look_good_logo_text {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 48px;
+    padding-bottom: 100px;
+}
+
+.look_good_cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.look_good_card1 {
+    position: relative;
+    width: 605px;
+    height: 272px;
+    background-color: #EFEFEF;
+    border-radius: 18px;
+    box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.25);
+}
+
+.look_good_card_content {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.look_good_card1_main_text {
+    color: $accent_color;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 18px;
+}
+
+.look_good_card1_main_text span {
+    font-size: 24px;
+}
+
+.look_good_card1_second_text {
+    color: #202727;
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 75px;
+}
+
+.look_good_card_content button {
+    font-size: 20px;
+    font-weight: 400px;
+    color: white;
+    padding: 15px 37px;
+    background-color: #000000;
+    border: none;
+    border-radius: 16px;
+}
+
+.look_good_card_content button:hover {
+    background-color: white;
+    color: #000000;
+    cursor: pointer;
+    box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.25);
+}
+
+.look_good_card1_img1 {
+    position: absolute;
+    top: -33%;
+    right: -18%;
+    overflow: hidden;
+}
+
+.look_good_card1_img2 {
+    position: absolute;
+    top: -22%;
+    right: -13%;
+    overflow: hidden;
+}
+
+.more_text {
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.nike_members {
+    width: 100%;
+    height: 324px;
+    background-image: url(/img/last.png);
+    background-size: cover;
+}
+
+.nike_members_text {
+    padding-left: 50px;
+    padding-top: 44px;
+}
+
+.nike_members_main_text {
+    font-size: 40px;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 48px;
+    color: white;
+    padding-bottom: 25px;
+}
+
+.nike_members_second_text {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 25px;
+}
+
+.nike_members_second_text span {
+    font-weight: 700;
+}
+
+.nike_members_text button {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 46px;
+    border: none;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.nike_members_text button:hover {
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    box-shadow: 5px 5px 25px 0px rgba(255, 255, 255, 0.45);
+}
+
+.glory_to_ukraine {
+    width: 100%;
+    text-align: center;
+}
+
+.thx {
+    font-size: 24px;
+    line-height: 29px;
+    padding-top: 100px;
+    text-transform: uppercase;
+}
+
+.glory {
+    font-size: 48px;
+    font-weight: 900;
+    font-style: italic;
+    padding: 30px 0;
+}
+
+.glory_to_ukraine img {
+    padding-bottom: 100px;
+}
+
+@media (min-width: 931px) and (max-width: 1300px) {
+    .main_baner {
+        height: 22vw;
+        background-size: contain;
+    }
+
+    .main_text {
+        padding: 0 0 0 10px;
+    }
+
+    .main_text :first-child {
+        font-size: 30px;
+        padding-bottom: 15px;
+    }
+
+    .main_text p {
+        font-size: 15px;
+        font-weight: 600;
+        padding-top: 15px;
+
+    }
+
+    .main_text button {
+        margin: 9px 0;
+    }
+
+    .big_baner {
+        height: 50vw;
+        background-size: contain;
+
+    }
+
+    .summer_mod_cards {
+        justify-content: center;
+        top: -75px;
+    }
+
+    .summer_mod_card2 {
+        display: none;
+    }
+
+    .summer_mod_card1 {
+        width: 540px;
+        height: 200px;
+    }
+
+    .summer_mod_card1_main_text {
+        font-size: 40px;
+        padding-top: 21px;
+        padding-left: 30px;
+        padding-bottom: 10px;
+    }
+
+    .summer_mod_card1_second_text {
+        font-size: 16px;
+        padding-left: 30px;
+    }
+
+    .arrow_up {
+        width: 45px;
+        height: 45px;
+        margin-left: 50px;
+    }
+
+    .shous {
+        width: 400px;
+        top: -75px;
+        right: -35px;
+    }
+
+    .summer_mod_text p {
+        padding-top: 220px;
+        font-size: 35px;
+    }
+
+    .summer_mod_text p span {
+        font-size: 70px;
+    }
+
+    .top_sneahers {
+        padding-top: 70px;
+    }
+
+    .top_sneakers_nav p {
+        font-size: 35px;
+    }
+
+    .arrow_left {
+        margin-right: 0;
+    }
+
+    .arrow_right {
+        margin-right: 30px;
+    }
+
+    .card3 {
+        display: none;
+    }
+
+    .top_sneahers_cards {
+        justify-content: space-around;
+    }
+
+    .top_sneahers_card1 {
+        width: 350px;
+        height: 500px;
+    }
+
+    .logo_text {
+        font-size: 160px;
+        padding: 0 110px;
+    }
+
+    .top_sneahers_card1_content {
+        font-size: 34px;
+    }
+
+    .top_sneahers_card1_content p {
+        font-size: 35px;
+    }
+
+    .top_sneahers_card1_img img {
+        top: 3%;
+        right: -3%;
+    }
+
+    .arrow_up_second {
+        margin-left: 30px;
+        margin-top: 60px;
+    }
+
+    .arrow_up_4 {
+        margin-left: 70px;
+        margin-top: 56px;
+    }
+
+    .buy_by_category p {
+        font-size: 30px;
+    }
+
+    .category_container_box1,
+    .category_container_box2,
+    .category_container_box3,
+    .category_container_box4,
+    .category_container_box5,
+    .category_container_box6 {
+        height: 350px;
+
+    }
+
+    .category_container_box2 img {
+        height: 350px;
+    }
+
+    .category_container_box3 img {
+        height: 350px;
+    }
+
+    .category_container_box6 img {
+        width: 461.8px;
+        height: 350px;
+    }
+
+    .look_good {
+        width: 100%;
+        padding-top: 70px;
+        padding-left: 0;
+    }
+
+    .look_good_logo_text {
+        font-size: 35px;
+        padding-bottom: 55px;
+    }
+
+    .look_good_cards {
+        justify-content: center;
+    }
+
+    .look_good_card2 {
+        display: none;
+    }
+
+    .look_good_card1 {
+        width: 575px;
+        height: 240px;
+    }
+
+    .look_good_card_content {
+        padding-top: 35px;
+        padding-left: 35px;
+    }
+
+    .look_good_card1_main_text {
+        font-size: 25px;
+    }
+
+    .look_good_card1_main_text span {
+        font-size: 20px;
+    }
+
+    .look_good_card1_second_text {
+        font-size: 20px;
+        padding-bottom: 40px;
+    }
+
+    .look_good_card_content button {
+        font-size: 15px;
+    }
+
+    .look_good_card1_img1 {
+        top: -50%;
+    }
+
+    .nike_members {
+        height: 235px;
+        background-size: contain;
+    }
+
+    .more_text {
+        padding-top: 70px;
+        padding-bottom: 15px;
+        font-size: 35px;
+    }
+
+    .nike_members_text {
+        padding-top: 24px;
+    }
+
+    .nike_members_main_text {
+        font-size: 35px;
+        padding-bottom: 5px;
+    }
+
+    .nike_members_second_text {
+        padding-bottom: 20px;
+        font-size: 18px;
+    }
+
+    .nike_members_text button {
+        font-size: 14px;
+    }
+
+    .thx {
+        font-size: 20px;
+        padding-top: 70px;
+    }
+
+    .glory {
+        font-size: 43px;
+        padding: 20px 0;
+    }
+
+    .glory_to_ukraine img {
+        padding-bottom: 70px;
+    }
+}
+
+@media (max-width: 930px) {}
